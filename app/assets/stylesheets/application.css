@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.avatar {
+ 	height: 500px;
+ }
+
+body{
+  background-image: url(image.png);
+}
+
+h1{
+
+	color: #CD5C5C;
+	font-family: verdana, sans-serif;
+	font-size: 400%;
+	font-style: italic;
+	font-variant: small-caps;
+	letter-spacing: 5px;
+	text-align: center;
+	background-color: #FFDAB9
+}
+
+h2{
+	font-family: avenir;
+	font-size: 350%;
+	font-style: italic;
+	font-style: bold;
+	font-variant: small-caps;
+	text-align: center;
+	color: #191970
+}
+
+h3{
+	font-family: avenir;
+	font-size: 200%;
+	font-variant: small-caps;
+	color: #191970
+}
+
+.article {
+	font-family: verdana, sans-serif;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: justify;
+}
+
+.bloc-titre{
+	text-align: center;
+	font-family: verdana;
+	font-variant: small-caps;
+}
+
+.texte{
+	font-family: verdana, sans-serif;
+	font-size: 150%;
+	font-style: bold;
+	text-align: center;
+	color: #F08080;
+}

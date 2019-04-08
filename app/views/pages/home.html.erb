@@ -1,0 +1,28 @@
+<div class="container">
+	
+<h1>Akinator</h1>
+
+<%= Time.now.strftime ("%d %m %y %Hh%M") %>
+
+<div class="texte">
+<p>Challenge me to see if I can find who you think!</p>
+</div>
+
+<div class="row">
+		<div class="col-md-6">
+			<h3>Ma question</h3>
+			<div class="links">
+				<div class="btn btn-warning">OUI</div>
+				<div class="btn btn-light">NON</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<img src="https://fr.akinator.com/bundles/elokencesite/images/akitudes_670x1096/defi.png?v95" alt="", class="avatar">
+			</div>
+		</div>
+	</div>
+
+
+<%= link_to( "Mon blog", pages_blog_path, method: :get, class: "btn btn-warning" )  %>
+
+<%= link_to( "Commencer le jeu", games_path, method: :post, class: "btn btn-light" )  %>

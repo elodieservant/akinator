@@ -1,0 +1,56 @@
+<h1>Mon Blog</h1>
+<div class="bloc-titre">
+<h2> Bonjour </h2>
+<p>Bienvenue sur notre blog !</p>
+</div>
+
+
+
+<% article1 = {
+	"title" => "Recette Faux-mage",
+	"content" => "12 heures à l’avance, plongez les noix de cajou dans un saladier rempli d’eau.
+Au bout des 12 heures, égouttez.
+Versez dans le bol d’un mixeur les noix de cajou, l’eau, le citron, le sel, l’échalotes, une cuillère à soupe de ciboulettes et l’ail hachée et dégermée.
+Mixez jusqu’à obtenir la consistance d’une crème. La poudre de cajou se transforme petit à petit en crème. Comptez 2 à 3 minutes de mixage.
+Placez un film alimentaire dans un cercle de 10 cm.
+Versez la crème de cajou et entreposez au frais pendant 6 heures minimum.
+Au moment de la dégustation, démoulez et ajoutez le reste de ciboulette par-dessus.",
+	"rating" => 3
+}%>
+
+<% article2 = {
+	"title" => "Recette Rouleaux de printemps",
+	"content" => "Coupez l’avocat en deux puis en tranches dans la longueur.
+Epluchez la carotte et coupez-la en tagliatelles avec un économe.
+Coupez les radis en bâtonnets.
+Versez de l’eau tiède dans une assiette creuse. Plongez une feuille de riz pour la faire ramollir.
+Placez sur un torchon propre.
+Placez au centre en formant un rectangle les différents légumes (pour la salade, émincez grossièrement). Salez, poivrez et arrosez de quelques gouttes de jus de citron et d’un peu d’huile de sésame.
+Rabattez les bords gauches et droits de la feuille de riz, sur la garniture.
+Roulez en serrant bien.
+Recommencez avec le reste des ingrédients.
+Mixez le kiwi avec le chèvre frais et la crème liquide. Salez, poivrez.
+Servez la sauce avec les rouleaux de printemps.",
+	"rating" => 3
+}%>
+
+<% article3 = {
+	"title" => "Recette Petits sablés",
+	"content" => "Coupez le beurre en morceaux et laissez-le ramollir avant de le mélanger avec le sucre.
+	Ajoutez l’œuf.
+Terminez par la farine, la levure et 1/2 cuillère à café de cannelle.
+Formez une boule, enveloppez d’un film alimentaire et entreposez au réfrigérateur pendant 1 heure.
+Reprenez la pâte et étalez-la sur un plan de travail fariné sur 1 ou 2 mm d’épaisseur. Saupoudrez de cannelle en poudre.
+Réalisez des bandes de 5 mm de large sur 15 cm de long et enroulez-les sur elles-mêmes comme un escargot. Pour réaliser la pyramide, il faut simplement partir légèrement en biais pendant l’enroulage.",
+	"rating" => 3
+}%>
+
+
+<% articles = [ article1, article2, article3 ] %>
+<% articles.each do |article| %>
+	 <div class="article">
+		<h3><%= article["title"] %></h3>
+		<p><%= article["content"] %></p>
+	</div>
+<% end %> 
+
